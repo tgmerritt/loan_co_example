@@ -31,7 +31,7 @@ LoanCo::Application.configure do
   # config.force_ssl = true
 
   # See everything in the log (default is :info)
-  # config.log_level = :debug
+  config.log_level = :info
 
   # Prepend all log lines with the following tags
   # config.log_tags = [ :subdomain, :uuid ]
@@ -60,6 +60,12 @@ LoanCo::Application.configure do
 
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
+
+  # config.eager_load is set to nil. Please update your config/environments/*.rb files accordingly:
+    # * development - set it to false
+    # * test - set it to false (unless you use a tool that preloads your test environment)
+    # * production - set it to true
+  config.eager_load = true
 
   # Log the query plan for queries taking more than this (works
   # with SQLite, MySQL, and PostgreSQL)
