@@ -3,3 +3,5 @@ This is a simple example of how you might start a loan calculator application wi
 There are many things that this tool doesn't address - it doesn't care about APR, it doesn't compound, it does restrict each user from seeing loans for other users.  But the broad elements are all here to begin.
 
 Rails 4.2, Ruby 2.1.5, backed by PostgreSQL
+
+The application is fully live on Heroku at http://lit-bayou-2810.herokuapp.com/dashboard
