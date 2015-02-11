@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  origination_fee: 1.5
+  origination_fee_percent: 9.99
+  maintenance_fee: 1.5
+  maintenance_fee_period: 1
+
+two:
+  origination_fee: 1.5
+  origination_fee_percent: 9.99
+  maintenance_fee: 1.5
+  maintenance_fee_period: 1

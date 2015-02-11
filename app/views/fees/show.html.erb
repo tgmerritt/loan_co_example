@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Origination fee:</strong>
+  <%= @fee.origination_fee %>
+</p>
+
+<p>
+  <strong>Origination fee percent:</strong>
+  <%= @fee.origination_fee_percent %>
+</p>
+
+<p>
+  <strong>Maintenance fee:</strong>
+  <%= @fee.maintenance_fee %>
+</p>
+
+<p>
+  <strong>Maintenance fee period:</strong>
+  <%= @fee.maintenance_fee_period %>
+</p>
+
+<%= link_to 'Edit', edit_fee_path(@fee) %> |
+<%= link_to 'Back', fees_path %>

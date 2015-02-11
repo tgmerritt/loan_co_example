@@ -1,0 +1,47 @@
+<div class="row">
+  <div class="col-md-6">
+    <p id="notice"><%= notice %></p>
+
+    <p>
+      <strong>Interest rate:</strong>
+      <%= @loan.interest_rate %>
+    </p>
+
+    <p>
+      <strong>Interest rate period:</strong>
+      <%= @loan.interest_rate_period %>
+    </p>
+
+    <p>
+      <strong>Balance:</strong>
+      <%= @loan.balance %>
+    </p>
+
+    <p>
+      <strong>Principal:</strong>
+      <%= @loan.principal %>
+    </p>
+
+    <p>
+      <strong>Loan period duration:</strong>
+      <%= @loan.loan_period_duration %>
+    </p>
+
+    <p>
+      <strong>Loan period type:</strong>
+      <%= @loan.loan_period_type %>
+    </p>
+
+    <%= link_to 'Edit', edit_loan_path(@loan) %> |
+    <%= link_to 'Back', loans_path %>
+  </div>
+
+  <div class="col-md-6">
+    <h3>Payments</h3>
+    <% @payments.each do |p| %>
+      <%= p.round(2) %><br />
+    <% end %>
+
+
+  </div>
+</div>
